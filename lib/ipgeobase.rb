@@ -18,7 +18,7 @@ module Ipgeobase
     element :lat, Float, tag: "lat"
     element :lon, Float, tag: "lon"
   end
-  
+
   def self.lookup(address)
     uri = URI(address)
     res = Net::HTTP.get_response(uri)
